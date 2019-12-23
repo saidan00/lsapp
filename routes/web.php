@@ -12,7 +12,8 @@
 */
 
 Route::get('/', 'PagesController@index');
-
 Route::get('/about', 'PagesController@about');
-
 Route::get('/services', 'PagesController@services');
+
+// create route for all function in PostsController
+Route::resource('posts', 'PostsController');
